@@ -1,0 +1,53 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.towers {
+	display: flex;
+	flex-direction: row;
+	gap: 100px;
+}
+
+.tower {
+	cursor: pointer;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: relative;
+	width: 80px;
+}
+.tower.selected .line {
+	background: yellow;
+}
+.tower:hover .line {
+	background: red;
+}
+
+.tower .line {
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	transform: translate(-50%, 0);
+	bottom: 0px;
+	height: 100px;
+	width: 1px;
+	background: white;
+}
+
+.discs {
+	gap: 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: end;
+	height: 100%;
+}
+
+.disc {
+	height: 10px;
+	width: 100px;
+	background: blue;
+}
+
