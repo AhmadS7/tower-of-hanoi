@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { useState } from 'react';
 import './App.css';
-const NUM_DISCS = 5;
+const NUM_DISCS = 3;
 function App() {
   const [towers, setTowers] = useState([[3, 2, 1], [], []]);
   const [selectedTowerIndex, setSelectedTowerIndex] = useState<
